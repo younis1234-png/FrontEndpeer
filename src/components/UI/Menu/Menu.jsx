@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
+import "./Menu.scss";
 
 const Menu = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div className="menu">
+      <nav>
+        <ul>
+          <div className="menu__container">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <li>HOME</li>
+          <li>HOME</li>
+          <li>HOME</li>
+          <li>HOME</li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
 
-export default Menu
+export default Menu;

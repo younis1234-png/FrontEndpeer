@@ -1,0 +1,79 @@
+.menu {
+  position: absolute;
+  color: #fff;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  width: 420px;
+  background-color: #5112ef;
+  padding: 24px 0px;
+  height: 40vh;
+  transition: 1s ease-in-out;
+  clip-path: circle(9% at 9% 10%);
+
+  cursor: pointer;
+}
+nav ul:hover {
+    clip-path: circle(93% at 0% 20%);
+}
+.menu__container {
+  width: 48px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+.menu__container span {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  padding: 1px;
+  width: 30px;
+}
+.menu__container span:nth-child(1) {
+  top: 0;
+}
+.menu__container span:nth-child(2) {
+  top: 10px;
+  width: 30px;
+}
+.menu__container span:nth-child(3) {
+  bottom: 15px;
+  width: 30px;
+}
+
+nav ul:active .menu__container span:nth-child(1) {
+  top: 0;
+  left: 23px;
+  width: 4px;
+  height: 40px;
+}
+nav ul:active .menu__container span:nth-child(2) {
+  width: 40px;
+  left: 5px;
+}
+nav ul:active .menu__container span:nth-child(3) {
+  padding: 0;
+  width: 0;
+}
+nav ul:active .menu__container {
+  transform: rotateZ(45deg);
+}
+
+nav ul li {
+  padding: 24px 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+nav ul li:hover {
+  background-color: #401295;
+  padding-left: 56px;
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Indicator from "../Indicator/Indicator";
 import "./ImageSlider.scss";
 import { NavLink } from "react-router-dom";
+import Menu from "../Menu/Menu";
 
 const ImageSlider = ({
   images = [],
@@ -39,9 +40,8 @@ const ImageSlider = ({
         ></div>
       ))}
       <div className="gradient"></div>
-      <>
-        <a href="#" className="pricing-btn" data-text="color"></a>
-      </>
+      <Menu />
+      <a href="#" className="pricing-btn" data-text="color"></a>
 
       <Indicator
         nextSlide={nextSlide}
