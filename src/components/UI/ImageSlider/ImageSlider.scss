@@ -28,4 +28,82 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
   }
+  a {
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .pricing-btn {
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: absolute;
+    padding: 2rem 5rem;
+    overflow: hidden;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin: 4em;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: all 500ms ease-in-out;
+    &::after,
+    &::before {
+      content: "PRICE";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      // font-weight: 400;
+      color: #fff !important;
+      position: absolute;
+    }
+    &:hover,
+    &:focus {
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+$bg-color: #222;
+
+.pricing-btn {
+  &::before {
+    box-shadow: 0 1em 2em 3em rgba(181, 36, 0, 0.5),
+      4em 0em 2em 2em rgba(117, 37, 0, 0.6),
+      -4em -2em 2em 2em rgba(134, 0, 78, 0.5),
+      -4em 2em 2em 4em rgba(0, 0, 105, 0.5),
+      0 -3em 2em 3em rgba(120, 250, 0, 0.5),
+      2em -1em 2em 2em rgba(50, 10, 200, 0.5);
+    width: 0px;
+    height: 0px;
+    animation: mix 5s linear infinite;
+  }
+}
+
+@keyframes mix {
+  30% {
+    box-shadow: 0 -1em 2em 3em rgba(255, 0, 200, 0.5),
+      4em -1em 2em 3em rgba(255, 50, 0, 0.8),
+      -4em 2em 3em 2em rgba(155, 200, 0, 0.5),
+      -4em -2em 2em 2em rgba(200, 0, 150, 0.6),
+      0 3em 2em 2em rgba(20, 250, 0, 0.5),
+      2em 1em 2em 2em rgba(50, 10, 250, 0.5);
+  }
+
+  60% {
+    box-shadow: 2em 1em 2em 3em rgba(55, 0, 200, 0.5),
+      3em 1em 2em 3em rgba(25, 150, 0, 0.6),
+      3em -2em 3em 3em rgba(155, 200, 0, 0.5),
+      -4em 2em 2em 3em rgba(200, 0, 50, 0.6),
+      0 -3em 2em 3em rgba(200, 250, 0, 0.5),
+      -2em 1em 2em 3em rgba(50, 210, 250, 0.6);
+  }
+}
+
+.pricing-btn {
+  &::after {
+    background: transparent !important;
+    color: $bg-color !important;
+  }
 }

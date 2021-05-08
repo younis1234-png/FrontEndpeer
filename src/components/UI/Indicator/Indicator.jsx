@@ -12,7 +12,7 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
             className="indicator__slide"
             isActive={currentSlide === index}
             style={{
-              opacity: currentSlide === index ? 1 : 0.4,
+              opacity: currentSlide === index ? 1 : 0.3,
             }}
             onClick={() => nextSlide(index)}
           ></div>

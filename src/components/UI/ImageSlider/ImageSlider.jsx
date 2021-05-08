@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Indicator from "../Indicator/Indicator";
 import "./ImageSlider.scss";
+import { NavLink } from "react-router-dom";
 
 const ImageSlider = ({
   images = [],
@@ -13,7 +14,6 @@ const ImageSlider = ({
 
   const nextSlide = (slideIndex = currentSlide + 1) => {
     const newSlideIndex = slideIndex > images.length - 1 ? 0 : slideIndex;
-
     setCurrentSlide(newSlideIndex);
   };
 
@@ -39,6 +39,10 @@ const ImageSlider = ({
         ></div>
       ))}
       <div className="gradient"></div>
+      <>
+        <a href="#" className="pricing-btn" data-text="color"></a>
+      </>
+
       <Indicator
         nextSlide={nextSlide}
         currentSlide={currentSlide}
