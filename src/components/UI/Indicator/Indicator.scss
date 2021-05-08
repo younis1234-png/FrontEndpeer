@@ -1,0 +1,16 @@
+.indicator {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  &__slide {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+    // opacity: 0.6;
+    margin: 5px;
+    transition: 750ms all ease-in-out;
+  }
+}
