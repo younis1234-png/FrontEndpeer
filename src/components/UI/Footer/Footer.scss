@@ -1,3 +1,34 @@
 .footer {
   background-color: #5e33d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__email {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  &__icon {
+    margin-right: 10px !important;
+    color: #fff !important;
+    font-size: 2.5rem !important;
+  }
+  &__bottom {
+    margin-top: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  &__bottom h1 {
+    margin: 20px 0;
+  }
 }

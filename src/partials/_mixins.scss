@@ -16,6 +16,7 @@
   background-color: transparent;
   text-transform: uppercase;
   transition: all 500ms ease-in-out;
+  color: #fff;
 }
 @mixin Btn {
   outline: 0;
@@ -29,12 +30,14 @@
   font-weight: 400;
   font-size: 0.8em;
   margin: 4em;
+  color: #fff !important;
   background-color: transparent;
   text-transform: uppercase;
   transition: all 500ms ease-in-out;
   &::after,
   &::before {
-    content: "TRY IT NOW";
+    content: "TRY IT NOw";
+    color: #fff !important;
     font-weight: 800;
     font-size: 1rem;
     display: flex;
@@ -47,6 +50,7 @@
   &:hover,
   &:focus {
     background: rgba(255, 255, 255, 0.8);
+    color: #fff;
   }
 }
 
@@ -65,6 +69,7 @@
   &:hover,
   &:focus {
     background: rgba(255, 255, 255, 0.8);
+    color: #fff;
   }
 }
 @mixin btn-hover {
@@ -81,6 +86,7 @@
   &:hover,
   &:focus {
     background: rgba(255, 255, 255, 0.8);
+    color: #fff;
   }
 }
 
@@ -95,6 +101,7 @@
     width: 50%;
     height: 0px;
     animation: mix 5s linear infinite;
+    color: #fff;
   }
 }
 
@@ -102,5 +109,6 @@
   &::after {
     background: transparent !important;
     color: $bg-color !important;
+    color: #fff;
   }
 }

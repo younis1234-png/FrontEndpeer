@@ -1,3 +1,105 @@
+@use "../../partials//mixins" as *;
+
 .perks {
   background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  &__heading {
+    position: absolute;
+    top: 21%;
+    left: 13.5%;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 3.4rem;
+  }
+  &__services {
+    display: flex;
+    margin-top: 70px;
+  }
+  &__subscription {
+    margin-left: 105px;
+  }
+  &__line {
+    width: 45px;
+    height: 2px;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .heading__red {
+    color: #d34749;
+  }
+  .red {
+    border: 1px solid #d34749;
+  }
+  .heading__green {
+    color: #1ee1e9;
+  }
+  .green {
+    border: 1px solid #1ee1e9;
+  }
+  .heading__yellow {
+    color: #ffb33f;
+  }
+  .yellow {
+    border: 1px solid #ffb33f;
+  }
+}
+
+a {
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff !important;
+}
+.perks-btn {
+  @include Btn;
+  top: 40px;
+  right: -13%;
+  transform: translate(-50%, -50%);
+  padding: 1.2rem 7rem;
+  color: #fff;
+}
+
+.perks-btn {
+  @include btn-box-showdow;
+  color: #fff !important;
+}
+.perks-btn span {
+  color: #fff !important;
+}
+
+@keyframes mix {
+  30% {
+    box-shadow: 0 -1em 2em 3em rgba(255, 0, 200, 0.5),
+      4em -1em 2em 3em rgba(255, 50, 0, 0.8),
+      -4em 2em 3em 2em rgba(155, 200, 0, 0.5),
+      -4em -2em 2em 2em rgba(200, 0, 150, 0.6),
+      0 3em 2em 2em rgba(20, 250, 0, 0.5),
+      2em 1em 2em 2em rgba(50, 10, 250, 0.5);
+  }
+
+  60% {
+    box-shadow: 2em 1em 2em 3em rgba(55, 0, 200, 0.5),
+      3em 1em 2em 3em rgba(25, 150, 0, 0.6),
+      3em -2em 3em 3em rgba(155, 200, 0, 0.5),
+      -4em 2em 2em 3em rgba(200, 0, 50, 0.6),
+      0 -3em 2em 3em rgba(200, 250, 0, 0.5),
+      -2em 1em 2em 3em rgba(50, 210, 250, 0.6);
+  }
+}
+
+.perks-btn {
+  @include btn-background;
+  color: #fff !important;
 }

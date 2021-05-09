@@ -1,3 +1,72 @@
 .reviews {
   background-color: #1ee1e9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  &__tryBtn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  &__tryBtn button {
+    padding: 1rem 3rem;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #1ee1e9;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  &__heading {
+    position: absolute;
+    top: 33%;
+    left: 36.5%;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  &__img img {
+    // position: absolute;
+    width: 22vh;
+    flex-direction: row;
+    transform: rotate(-73deg);
+    -webkit-box-shadow: 3px 4px 15px -1px rgba(58, 58, 58, 0.43);
+    box-shadow: 3px 4px 15px -1px rgba(58, 58, 58, 0.43);
+  }
+  &__img img:nth-child(2) {
+    transform: rotate(-108deg);
+    margin-top: 150px;
+    margin-left: -70px;
+    position: absolute;
+    -webkit-box-shadow: 3px 4px 15px -1px rgba(58, 58, 58, 0.43);
+    box-shadow: 3px 4px 15px -1px rgba(58, 58, 58, 0.43);
+  }
+  &__customers {
+    margin-top: 120px;
+    margin-left: 25px;
+    width: 16vw;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__stars {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  &__title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+  }
+  &__comment {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
 }

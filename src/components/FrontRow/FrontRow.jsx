@@ -1,22 +1,32 @@
 import React from "react";
 import "./FrontRow.scss";
+import Rapper from "../../assets/rapper.jpg";
+import Rapper2 from "../../assets/imgC.png";
 
 const FrontRow = () => {
   return (
-    <div className="FrontRow">
+    <div className="frontRow">
       <div className="sectionright">
-        <div className="sectionRight_imgOverLayer one"></div>
-        <img src="" alt="" />
-        <div className="sectionRight_imgOverLayer tow"></div>
-        <img src="" alt="" />
-        <div className="sectionRight_imgOverLayer three"></div>
-        <img src="" alt="" />
+        <div className="topImg__overlay overLay one">
+          <div className="content__one content">IMAGE</div>
+          <div className="content__tow content">IMAGE</div>
+        </div>
+        <img src={Rapper2} alt="" />
       </div>
-      <div className="section__middle">
-        <div className="sound__tryBtn">
+      <div className="sectionBottom img2">
+        <div className="bottom__overlay overlay">
+          <div className="bottom__content">IMAGE</div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1618176581835-d60e9c2567b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+          alt=""
+        />
+      </div>
+      <div className="fontRow__middle">
+        <div className="sound__tryBtn fontRow__tryBtn ">
           <button>TRY IT NOW</button>
         </div>
-        <div className="sound__container">
+        <div className="">
           <div className="sound__top">
             <h1>FRONT ROW SEATS</h1>
             <div className="sound_bottom">
