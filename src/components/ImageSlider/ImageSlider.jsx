@@ -41,9 +41,10 @@ const ImageSlider = ({
         ></div>
       ))}
       <div className="gradient"></div>
-      <Menu />
-      <a href="#" className="pricing-btn" data-text="color"></a>
-      <Music />
+
+      <a href="#" className="pricing-btn" data-text="color">
+        <span className="text-btn">PRICE</span>
+      </a>
       <Indicator
         nextSlide={nextSlide}
         currentSlide={currentSlide}

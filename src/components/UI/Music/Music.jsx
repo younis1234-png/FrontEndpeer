@@ -1,9 +1,7 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "./music.scss";
-import { render } from "@testing-library/react";
-
-// Import your audio file
 import song from "../../../assets/audio/2.mp3";
+import { PlayArrow, Pause } from "@material-ui/icons";
 
 class Music extends Component {
   state = {
@@ -28,7 +26,9 @@ class Music extends Component {
   render() {
     return (
       <div className="music">
-        <button onClick={this.playPause}>Play | Pause</button>
+        <a className="music__play-btn" onClick={this.playPause}>
+          {/* {this.state.isPlaying !== false ? <Pause /> : <PlayArrow />} */}
+        </a>
       </div>
     );
   }

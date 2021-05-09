@@ -1,5 +1,6 @@
+@use "../../partials//mixins" as *;
+
 .ImageSlider {
-  //   border: 1px solid black;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
@@ -33,52 +34,16 @@
     overflow: hidden;
   }
   .pricing-btn {
-    outline: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    position: absolute;
-    padding: 2rem 5rem;
-    overflow: hidden;
-    letter-spacing: 4px;
-    font-weight: 400;
-    font-size: 0.8em;
-    margin: 4em;
-    background-color: transparent;
-    text-transform: uppercase;
-    transition: all 500ms ease-in-out;
-    &::after,
-    &::before {
-      content: "PRICE";
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 100;
-      // font-weight: 400;
-      color: #fff !important;
-      position: absolute;
-    }
-    &:hover,
-    &:focus {
-      background: rgba(255, 255, 255, 0.8);
-    }
+    @include Btn;
+    bottom: 50px;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 7rem;
   }
 }
-$bg-color: #222;
 
 .pricing-btn {
-  &::before {
-    box-shadow: 0 1em 2em 3em rgba(181, 36, 0, 0.5),
-      4em 0em 2em 2em rgba(117, 37, 0, 0.6),
-      -4em -2em 2em 2em rgba(134, 0, 78, 0.5),
-      -4em 2em 2em 4em rgba(0, 0, 105, 0.5),
-      0 -3em 2em 3em rgba(120, 250, 0, 0.5),
-      2em -1em 2em 2em rgba(50, 10, 200, 0.5);
-    width: 0px;
-    height: 0px;
-    animation: mix 5s linear infinite;
-  }
+  @include btn-box-showdow;
 }
 
 @keyframes mix {
@@ -102,8 +67,5 @@ $bg-color: #222;
 }
 
 .pricing-btn {
-  &::after {
-    background: transparent !important;
-    color: $bg-color !important;
-  }
+  @include btn-background;
 }

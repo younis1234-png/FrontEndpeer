@@ -1,0 +1,8 @@
+@use "./partials/gloabls" as *;
+
+.nav {
+  position: sticky;
+  top: 30px;
+  margin-left: 50px;
+  z-index: 10;
+}

@@ -1,0 +1,54 @@
+.hero {
+  &__middle-container {
+    width: 190vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -91px;
+  }
+  &__heading {
+    color: #fff;
+    font-size: 3.5rem;
+  }
+  &__paragraph {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionRed {
+    width: 100vw;
+    height: 55vw;
+    // border: 1px solid yellow;
+  }
+  .frontRow {
+    width: 100vw;
+    height: 51vw;
+    // border: 1px solid yellow;
+  }
+  .perks {
+    width: 100vw;
+    height: 51vw;
+    // border: 1px solid yellow;
+  }
+  .reviews {
+    width: 100vw;
+    height: 51vw;
+    // border: 1px solid yellow;
+  }
+  .downloadApp {
+    width: 100vw;
+    height: 30vw;
+    // border: 1px solid yellow;
+  }
+  .footer {
+    width: 100vw;
+    height: 30vw;
+    // border: 1px solid yellow;
+  }
+}
