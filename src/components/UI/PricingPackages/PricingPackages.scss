@@ -1,0 +1,137 @@
+.package {
+  background-color: #191919;
+  width: 100vw;
+  height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  h1 {
+    color: #fff;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .right {
+    width: 20vw;
+    margin-top: 150px;
+  }
+  .left {
+    width: 20vw;
+    margin-top: 150px;
+  }
+  .middle {
+    width: 20vw;
+    margin-top: 150px;
+  }
+  &__left h2,
+  h1 {
+    color: #d34749;
+    margin: 10px 0;
+    letter-spacing: 2px;
+  }
+  &__pricingLeft span {
+    font-size: 2rem;
+    color: #d34749;
+    font-weight: 800;
+  }
+  &__left .package__underLine {
+    width: 40px;
+    height: 1px;
+    border: 1px solid #d34749;
+  }
+  &__middle h2,
+  h1 {
+    color: #ffb33f;
+    margin: 10px 0;
+    letter-spacing: 2px;
+  }
+  &__pricingMiddle span {
+    font-size: 2rem;
+    color: #ffb33f;
+    font-weight: 800;
+  }
+
+  &__middle .package__underLine {
+    width: 40px;
+    height: 1px;
+    border: 1px solid #ffb33f;
+  }
+  &__right h2,
+  h1 {
+    color: #1ee1e9;
+    margin: 10px 0;
+    letter-spacing: 2px;
+  }
+  &__pricingRight span {
+    font-size: 2rem;
+    color: #1ee1e9;
+    font-weight: 800;
+  }
+  &__right .package__underLine {
+    width: 40px;
+    height: 1px;
+    border: 1px solid #1ee1e9;
+  }
+  .package__middle p,
+  .package__left p,
+  .package__right p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 8px;
+    letter-spacing: 2px;
+  }
+  .MuiSvgIcon-root {
+    color: #fff !important;
+    font-size: 12px !important;
+    margin-right: 2px !important;
+  }
+
+  &__pricingInfo {
+    position: absolute;
+    top: 10%;
+    left: 21%;
+  }
+  &__pricingInfo h1 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  &__pricingInfo p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .link {
+    margin-top: 50px;
+    padding: 0.8rem 3.5rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  .link__container {
+    margin-top: 30px;
+  }
+  .package__left a {
+    background-color: #d34749;
+    color: #fff;
+  }
+  .package__middle a {
+    background-color: #ffb33f;
+    color: #fff;
+    margin-top: 30px;
+  }
+  .package__right a {
+    background-color: #1ee1e9;
+    color: #fff;
+    margin-top: 30px;
+  }
+}

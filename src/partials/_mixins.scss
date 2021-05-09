@@ -36,7 +36,7 @@
   transition: all 500ms ease-in-out;
   &::after,
   &::before {
-    content: "TRY IT NOw";
+    content: "";
     color: #fff !important;
     font-weight: 800;
     font-size: 1rem;
@@ -107,8 +107,8 @@
 
 @mixin btn-background {
   &::after {
-    background: transparent !important;
-    color: $bg-color !important;
-    color: #fff;
+    // background: transparent !important;
+    // color: $bg-color !important;
+    // color: #fff;
   }
 }

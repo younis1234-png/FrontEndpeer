@@ -1,0 +1,237 @@
+@use "../../partials//mixins" as *;
+
+.payment {
+  background-color: #fff;
+  width: 93vw;
+  height: 150vh;
+  display: flex;
+  margin-left: 70px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  position: relative;
+
+  &__title {
+    color: #191919;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    margin-left: 80px;
+    font-size: 3rem;
+  }
+
+  &__billingInfo h1 {
+    color: #191919;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  &__heading {
+    color: #191919;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 70px !important;
+  }
+  &__topInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__topInput label {
+    margin-left: 20px;
+    letter-spacing: 1px;
+  }
+  &__topInput label:nth-child(1) {
+    margin-left: 70px;
+    color: #d34749;
+  }
+  &__topInput label:nth-child(2) {
+    margin-left: 10px;
+    color: #ffb33f;
+  }
+  &__topInput label:nth-child(3) {
+    margin-left: 10px;
+    color: #1ee1e9;
+  }
+  &__topInput label input:nth-child(1) {
+    margin-left: 10px;
+    background-color: #d34749;
+  }
+  &__topInput label:nth-child(2) {
+    margin-left: 10px;
+    color: #ffb33f;
+  }
+  &__topInput label:nth-child(3) {
+    margin-left: 10px;
+    color: #1ee1e9;
+  }
+
+  &__topInput input {
+    margin-right: 5px;
+  }
+
+  // MIDDLE
+  &__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: row;
+  }
+  &__billingInfo {
+    width: 43vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__creditInfo {
+    width: 43vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__billingInfo h1 {
+    margin-left: -100px;
+  }
+  &__creditInfo h1 {
+    margin-left: -100px;
+  }
+  &__billingInfo label,
+  &__creditInfo label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 0.6rem;
+  }
+  &__cerditInfo {
+    width: 43vw;
+    height: 50vh;
+  }
+  .input__billing {
+    padding: 0.5rem 6rem;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    border: 1px solid #191919;
+  }
+  &__cityPostal {
+    display: flex;
+  }
+  .input__small {
+    padding: 0.5rem 0.6rem;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid #191919;
+  }
+  select {
+    padding: 0.5rem 9.7rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #191919;
+  }
+
+  .payment__cityPostal select {
+    padding: 0.5rem 4.5rem;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid #191919;
+  }
+  input {
+    transition: all 0.2s ease-in-out;
+  }
+  input:focus {
+    border-bottom: 2px solid #1ee1e9;
+  }
+
+  // BOTTOM BUTTON
+
+  &__bottom {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  &__bottomTop p {
+    font-weight: 300;
+  }
+  &__paraContainer a {
+    color: rgb(29, 29, 135) !important;
+    font-weight: 500;
+  }
+  &__paraContainer {
+    font-weight: 300;
+  }
+  &__bottomTop {
+    margin-bottom: 30px;
+  }
+  button {
+    padding: 0.5rem 3rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    border: 1px solid lightblue;
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  overflow: hidden;
+}
+.pricing-btn {
+  @include Btn;
+  bottom: 46px;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  padding: 0.9rem 3rem;
+}
+.pricing-btn span {
+  z-index: 100;
+  font-weight: 800;
+}
+
+.pricing-btn {
+  @include btn-box-showdow;
+}
+
+@keyframes mix {
+  30% {
+    box-shadow: 0 -1em 2em 3em rgba(255, 0, 200, 0.5),
+      4em -1em 2em 3em rgba(255, 50, 0, 0.8),
+      -4em 2em 3em 2em rgba(155, 200, 0, 0.5),
+      -4em -2em 2em 2em rgba(200, 0, 150, 0.6),
+      0 3em 2em 2em rgba(20, 250, 0, 0.5),
+      2em 1em 2em 2em rgba(50, 10, 250, 0.5);
+  }
+
+  60% {
+    box-shadow: 2em 1em 2em 3em rgba(55, 0, 200, 0.5),
+      3em 1em 2em 3em rgba(25, 150, 0, 0.6),
+      3em -2em 3em 3em rgba(155, 200, 0, 0.5),
+      -4em 2em 2em 3em rgba(200, 0, 50, 0.6),
+      0 -3em 2em 3em rgba(200, 250, 0, 0.5),
+      -2em 1em 2em 3em rgba(50, 210, 250, 0.6);
+  }
+}
+
+.pricing-btn {
+  // @include btn-background;
+  
+}
