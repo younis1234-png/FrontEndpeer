@@ -2,6 +2,7 @@ import React from "react";
 import "./Reviews.scss";
 import Speaker from "../../assets/speaker-review.png";
 import StarIcon from "@material-ui/icons/Star";
+import { Link } from "react-router-dom";
 
 const reviewsList = [
   {
@@ -25,7 +26,9 @@ const Reviews = () => {
   return (
     <div className="reviews">
       <div className="reviews__tryBtn tryBtn">
-        <button>TRY IT NOW</button>
+        <Link to="/pricing">
+          <button>TRY IT NOW</button>
+        </Link>
       </div>
       <div className="reviews__img">
         <img src={Speaker} alt="speaker" />
@@ -33,8 +36,8 @@ const Reviews = () => {
       </div>
       <h1 className="reviews__heading">REVIEWS</h1>
       <div className="reviews__container">
-        {reviewsList.map((review) => (
-          <div className="reviews__customers">
+        {reviewsList.map((review, index) => (
+          <div key={index} className="reviews__customers">
             <p className="reviews__stars">
               {review.stars}
               {review.stars} {review.stars}

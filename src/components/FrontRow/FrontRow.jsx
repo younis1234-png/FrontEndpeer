@@ -23,8 +23,8 @@ const FrontRow = () => {
         />
       </div>
       <div className="fontRow__middle">
-        <div className="sound__tryBtn fontRow__tryBtn ">
-          <button>TRY IT NOW</button>
+        <div className="fontRow__tryBtn ">
+          <a href="/pricing">TRY IT NOW</a>
         </div>
         <div className="">
           <div className="sound__top">

@@ -1,5 +1,5 @@
 import "./App.scss";
-import Menu from "./components/UI/Menu/Menu";
+import Nav from "./components/UI/Nav/Nav";
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="nav">
-        <Menu />
+        <Nav />
       </div>
       <Switch>
         <Route exact path="/">

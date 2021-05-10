@@ -6,7 +6,7 @@ const Perks = () => {
     <div className="perks">
       <div className="">
         <a href="#" className="perks-btn" data-text="color">
-          <span className="text-btn">PRICE</span>
+          <span className="text-btn">TRY IT NOW</span>
         </a>
       </div>
       <h1 className="perks__heading">PERKS</h1>

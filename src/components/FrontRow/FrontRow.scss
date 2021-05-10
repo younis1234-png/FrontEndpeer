@@ -156,3 +156,18 @@
     padding: 1rem 3rem;
   }
 }
+
+.fontRow__tryBtn {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 0.8rem 2.5rem;
+  background-color: #fff;
+  color: #ffb33f;
+  z-index: 10000;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.fontRow__tryBtn a {
+  color: #ffb33f !important;
+  font-weight: bold;
+}

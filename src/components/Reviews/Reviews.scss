@@ -19,6 +19,7 @@
     color: #1ee1e9;
     font-size: 0.9rem;
     font-weight: 700;
+    cursor: pointer;
   }
   &__heading {
     position: absolute;
@@ -68,5 +69,9 @@
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 2px;
+  }
+  a,
+  button {
+    cursor: pointer;
   }
 }

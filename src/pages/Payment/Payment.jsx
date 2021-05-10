@@ -98,7 +98,6 @@ const Payment = () => {
           <a href="#" className="pricing-btn" data-text="color">
             <span className="text-btn">DOWNLOAD</span>
           </a>
-          
         </div>
       </div>
       <Footer />

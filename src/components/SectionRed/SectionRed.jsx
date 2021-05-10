@@ -2,12 +2,13 @@ import React from "react";
 import "./SectionRed.scss";
 import Speakers from "../../assets/speakers.png";
 import Music from "../../components/UI/Music/Music";
+import { NavLink } from "react-router-dom";
 
 const SectionRed = () => {
   return (
     <div className="sound">
       <div className="sound__tryBtn">
-        <button>TRY IT NOW</button>
+        <a href="/pricing">TRY IT NOW</a>
       </div>
       <div className="sound__container">
         <div className="sound__top">

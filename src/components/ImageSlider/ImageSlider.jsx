@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Indicator from "../UI/Indicator/Indicator";
 import "./ImageSlider.scss";
 import { NavLink } from "react-router-dom";
-import Menu from "../UI/Menu/Menu";
+import Nav from "../UI/Nav/Nav";
 import Music from "../UI/Music/Music";
 
 const ImageSlider = ({
@@ -42,7 +42,7 @@ const ImageSlider = ({
       ))}
       <div className="gradient"></div>
 
-      <a href="#" className="pricing-btn" data-text="color">
+      <a href="/pricing" className="pricing-btn" data-text="color">
         <span className="text-btn">PRICE</span>
       </a>
       <Indicator

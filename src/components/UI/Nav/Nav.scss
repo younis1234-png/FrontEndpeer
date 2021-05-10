@@ -1,6 +1,7 @@
 .menu {
   position: absolute;
   color: #fff;
+  position: relative;
 }
 nav {
   position: absolute;
@@ -12,7 +13,7 @@ nav ul {
   list-style: none;
   margin: 0;
   width: 420px;
-  background-color: #5112ef;
+  background-color: #1919196d;
   padding: 24px 0px;
   height: 40vh;
   transition: 1s ease-in-out;
@@ -21,7 +22,7 @@ nav ul {
   cursor: pointer;
 }
 nav ul:hover {
-    clip-path: circle(93% at 0% 20%);
+  clip-path: circle(93% at 0% 20%);
 }
 .menu__container {
   width: 48px;
@@ -39,17 +40,22 @@ nav ul:hover {
   width: 30px;
 }
 .menu__container span:nth-child(1) {
-  top: 0;
+  top: -10px;
+  color: #d34749;
 }
 .menu__container span:nth-child(2) {
-  top: 10px;
+  top: 1px;
   width: 30px;
+  color: #d34749;
 }
 .menu__container span:nth-child(3) {
-  bottom: 15px;
+  bottom: 24px;
   width: 30px;
+  color: #d34749;
 }
-
+.menu__container span {
+  color: #d34749 !important;
+}
 nav ul:active .menu__container span:nth-child(1) {
   top: 0;
   left: 23px;
@@ -63,6 +69,7 @@ nav ul:active .menu__container span:nth-child(2) {
 nav ul:active .menu__container span:nth-child(3) {
   padding: 0;
   width: 0;
+  color: #d34749;
 }
 nav ul:active .menu__container {
   transform: rotateZ(45deg);
@@ -76,4 +83,10 @@ nav ul li {
 nav ul li:hover {
   background-color: #401295;
   padding-left: 56px;
+}
+
+h3 {
+  position: absolute !important;
+  left: 70px !important;
+  top: 15px !important;
 }

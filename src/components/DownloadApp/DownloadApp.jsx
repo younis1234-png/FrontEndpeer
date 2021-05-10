@@ -9,15 +9,8 @@ const DownloadApp = () => {
         <p className="app__info">Purchase and download the app.</p>
       </div>
       <div className="app__tryBtn tryBtn">
-        <a
-          href="#"
-          className="app-btn"
-          style={{ color: "#fff" }}
-          data-text="color"
-        >
-          <span style={{ color: "#fff" }} className="text-btn">
-            PRICE
-          </span>
+        <a href="/pricing" className="app-btn" data-text="color">
+          <span className="text-btn">TRY IT NOW</span>
         </a>
       </div>
     </div>

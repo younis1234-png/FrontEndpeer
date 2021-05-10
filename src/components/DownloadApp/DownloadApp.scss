@@ -35,7 +35,9 @@ a {
   @include Btn;
   margin-top: -5px;
   transform: translate(-50%, -50%);
-  padding: 1.2rem 7rem;
+  padding: 1rem 1rem;
+  width: 30%;
+  height: 10%;
   color: #fff;
 }
 
@@ -70,4 +72,9 @@ a {
 .app-btn {
   @include btn-background;
   color: #fff !important;
+}
+.app-btn span {
+  z-index: 100;
+  font-weight: 800;
+  font-size: 1.3rem;
 }

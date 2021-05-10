@@ -60,7 +60,9 @@ const PricingPackages = () => {
                 {items.list[5][0]}
               </p>
               <div className="link__container"></div>
-              <a className="link">SELECT</a>
+              <a href="/payment" className="link">
+                SELECT
+              </a>
             </div>
             {/* middle */}
             <div className="package__middle middle">
@@ -95,7 +97,9 @@ const PricingPackages = () => {
                 {items.list[5][1]}
               </p>
               <div className="link__container"></div>
-              <a className="link">SELECT</a>
+              <a href="/payment" className="link">
+                SELECT
+              </a>
             </div>
             {/* middle */}
             <div className="package__right right">
@@ -130,7 +134,9 @@ const PricingPackages = () => {
                 {items.list[5][1]}
               </p>
               <div className="link__container">
-                <a className="link">SELECT</a>
+                <a href="/payment" className="link">
+                  SELECT
+                </a>
               </div>
             </div>
           </div>
