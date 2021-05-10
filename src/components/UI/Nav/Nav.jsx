@@ -5,9 +5,9 @@ const Nav = () => {
   return (
     <div className="menu">
       <nav>
-        <h3 classNamw="menu__logo">EXP|CON</h3>
+        <h3 className="menu__logo">EXP|CON</h3>
         <ul>
-          <h3 classNamw="menu__logo logo2">EXP|CON</h3>{" "}
+          <h3 className="menu__logo logo2">EXP|CON</h3>{" "}
           <div className="menu__container">
             <span></span>
             <span></span>

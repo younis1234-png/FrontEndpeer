@@ -10,7 +10,7 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
           <div
             key={index}
             className="indicator__slide"
-            isActive={currentSlide === index}
+            isactive={currentSlide === index}
             style={{
               opacity: currentSlide === index ? 1 : 0.3,
             }}
