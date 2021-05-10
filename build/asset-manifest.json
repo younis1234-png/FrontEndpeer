@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26ab9b9d.chunk.css",
+    "main.js": "/static/js/main.e1247a18.chunk.js",
+    "main.js.map": "/static/js/main.e1247a18.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc85cbe0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc85cbe0.js.map",
+    "static/js/2.b6a101cd.chunk.js": "/static/js/2.b6a101cd.chunk.js",
+    "static/js/2.b6a101cd.chunk.js.map": "/static/js/2.b6a101cd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.26ab9b9d.chunk.css.map": "/static/css/main.26ab9b9d.chunk.css.map",
+    "static/js/2.b6a101cd.chunk.js.LICENSE.txt": "/static/js/2.b6a101cd.chunk.js.LICENSE.txt",
+    "static/media/2.3bbe659c.mp3": "/static/media/2.3bbe659c.mp3",
+    "static/media/imgC.215eff73.png": "/static/media/imgC.215eff73.png",
+    "static/media/mike-von-RP7mZFXz7L0-unsplash.5d44fcba.jpg": "/static/media/mike-von-RP7mZFXz7L0-unsplash.5d44fcba.jpg",
+    "static/media/mike-von-Tgp0O6ahBn4-unsplash.15caa0f5.jpg": "/static/media/mike-von-Tgp0O6ahBn4-unsplash.15caa0f5.jpg",
+    "static/media/ramiro-pianarosa-8hW2ZB4OHZ0-unsplash.a968b58f.jpg": "/static/media/ramiro-pianarosa-8hW2ZB4OHZ0-unsplash.a968b58f.jpg",
+    "static/media/rapper.9a6af033.jpg": "/static/media/rapper.9a6af033.jpg",
+    "static/media/speaker-review.9b37f832.png": "/static/media/speaker-review.9b37f832.png",
+    "static/media/speakers.127f2a07.png": "/static/media/speakers.127f2a07.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc85cbe0.js",
+    "static/js/2.b6a101cd.chunk.js",
+    "static/css/main.26ab9b9d.chunk.css",
+    "static/js/main.e1247a18.chunk.js"
+  ]
+}
